@@ -8,8 +8,8 @@ router.post("/new", register);
 
 router.post("/login", login);
 
-router.get("/logout", logout);  
+router.get("/logout", logout);
 
-router.post("/me", isAuthenticated, getMyProfile);
+router.get("/me", isAuthenticated, getMyProfile);
 
 export default router;
